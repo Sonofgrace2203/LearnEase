@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,6 +32,7 @@ html {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(-0%);
     }
@@ -41,6 +42,7 @@ html {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateY(-0%);
     }
@@ -50,6 +52,7 @@ html {
     from {
         transform: translateY(100%);
     }
+
     to {
         transform: translateY(0%);
     }
@@ -59,6 +62,7 @@ html {
     from {
         transform: translateY(100%);
     }
+
     to {
         transform: translateY(0%);
     }
@@ -83,6 +87,7 @@ header {
     width: 100%;
     top: 0;
     box-shadow: -5px 5px 2px 5px var(--shadow);
+    z-index: 5;
 }
 
 .header-navbar {
@@ -169,6 +174,7 @@ a {
     color: var(--bg-soft-offwhite);
     text-decoration: none;
 }
+
 /* This is where the header CSS ends */
 
 
@@ -198,7 +204,7 @@ a {
 
 .hero-head-main {
     margin-top: -rem;
-    animation:  slideIn 1s ease-out forwards;
+    animation: slideIn 1s ease-out forwards;
 }
 
 .hero-head {
@@ -206,7 +212,7 @@ a {
     opacity: 0.5;
 }
 
-@media (min-width: 1024px) and (max-width: 1200)  {
+@media (min-width: 1024px) and (max-width: 1200) {
     .hero-head {
         font-size: 300%;
     }
@@ -221,8 +227,8 @@ a {
 
 @media (min-width: 1024px) and (max-width: 1200) {
     .hero-head-para {
-    font-size: 200%;
-}
+        font-size: 200%;
+    }
 }
 
 .hero-head-para1 {
@@ -255,10 +261,9 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: linear-gradient(to top right, 
+    background: linear-gradient(to top right,
             rgba(156, 187, 45, 0.9),
-            rgba(104,111,237, 0.9)
-            );
+            rgba(104, 111, 237, 0.9));
     height: 100vh;
     padding: 10rem 0rem;
     width: 100%;
@@ -277,6 +282,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .hero-ai {
     display: flex;
     justify-content: center;
@@ -312,7 +318,7 @@ a {
 .hero-ai-img {
     height: 40rem;
     width: 40rem;
-    animation:  slideIn 1s ease-out forwards;
+    animation: slideIn 1s ease-out forwards;
 }
 
 @media (min-width: 1024px) {
@@ -326,7 +332,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
-    animation:  slideOut 1s ease-out forwards;
+    animation: slideOut 1s ease-out forwards;
 }
 
 @media (max-width: 768px) {
@@ -366,7 +372,7 @@ button {
     border-radius: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    animation:  slideUp 1s ease-out forwards;
+    animation: slideUp 1s ease-out forwards;
 }
 
 @media (min-width: 1024px) {
@@ -392,6 +398,7 @@ button:hover {
     color: var(--bg-soft-offwhite);
     border: 2px solid var(--bg-soft-offwhite);
 }
+
 /* h2 {
     font-size: 10rem;
 } */
@@ -415,7 +422,7 @@ button:hover {
     flex-direction: column;
     gap: 3rem;
     width: 40rem;
-    animation:  slideIn 1s ease-out forwards;
+    animation: slideIn 1s ease-out forwards;
 }
 
 .section-two-hero2 {
@@ -423,7 +430,7 @@ button:hover {
     flex-direction: column;
     gap: 3rem;
     width: 40rem;
-    animation:  slideOut 1s ease-out forwards;
+    animation: slideOut 1s ease-out forwards;
 }
 
 .section-two-head {
@@ -488,6 +495,7 @@ em {
     font-weight: bold;
     line-height: 1.6;
 }
+
 /* This is where the hero-section-two CSS ends */
 
 
@@ -632,7 +640,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    animation:  slideIn 1s ease-out forwards;
+    animation: slideIn 1s ease-out forwards;
 }
 
 
@@ -780,7 +788,7 @@ footer {
     border-radius: 1rem;
     font-size: 1.5rem;
     border: 2px solid var(--bg-soft-offwhite);
-    box-shadow: -5px 2px 5px 2px var(--shadow); 
+    box-shadow: -5px 2px 5px 2px var(--shadow);
     transition: all 0.3s ease-in;
 }
 
@@ -791,7 +799,7 @@ footer {
     border-radius: 1rem;
     font-size: 1.5rem;
     border: 2px solid var(--bg-soft-offwhite);
-    box-shadow: -5px 2px 5px 2px var(--shadow); 
+    box-shadow: -5px 2px 5px 2px var(--shadow);
 }
 
 .page-scroll:hover {
@@ -812,7 +820,7 @@ footer {
     gap: 1rem;
     flex-direction: column;
     align-items: end;
-    animation:  slideOut 1s ease-out forwards;
+    animation: slideOut 1s ease-out forwards;
 }
 
 
@@ -822,6 +830,7 @@ footer {
 
 .section-mobile-menu {
     display: none;
+    z-index: 3;
 }
 
 .mobile-nav {
@@ -843,32 +852,32 @@ footer {
 }
 
 #mobile-h1 {
-   color: var(--accent-purple);
-   font-size: 2rem; 
-   background-color: var(--accent-purple-bg);
-   padding: 1rem 6rem;
+    color: var(--accent-purple);
+    font-size: 2rem;
+    background-color: var(--accent-purple-bg);
+    padding: 1rem 6rem;
 }
 
 #mobile-link {
-   color: var(--accent-purple);
-   font-size: 2rem; 
-   padding: 1rem 6rem;
-   display: block;
-   padding: 4rem 4rem;
-   border-bottom: 2px solid var(--accent-purple);
-   font-weight: bold;
+    color: var(--accent-purple);
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    display: block;
+    padding: 4rem 4rem;
+    border-bottom: 2px solid var(--accent-purple);
+    font-weight: bold;
 }
 
 #mobile-link:hover {
-   color: var(--bg-soft-offwhite);
-   background-color: var(--accent-purple);
-   font-size: 2rem; 
-   padding: 1rem 6rem;
-   display: block;
-   padding: 4rem 4rem;
-   border-bottom: 2px solid var(--accent-purple);
-   font-weight: bold;
-   font-size: 3rem;
+    color: var(--bg-soft-offwhite);
+    background-color: var(--accent-purple);
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    display: block;
+    padding: 4rem 4rem;
+    border-bottom: 2px solid var(--accent-purple);
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 .mobile-cancel {
