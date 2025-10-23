@@ -845,6 +845,7 @@ footer {
     align-items: center;
     gap: 5rem;
     box-shadow: 2px 2px 5px var(--shadow);
+    animation: slideUp 1s ease-in-out backwards;
 }
 
 .learnease-mobile-logo {
@@ -878,6 +879,7 @@ footer {
     border-bottom: 2px solid var(--accent-purple);
     font-weight: bold;
     font-size: 3rem;
+    animation: slideUp 1s ease-in-out backwards;
 }
 
 .mobile-cancel {
@@ -893,4 +895,5 @@ footer {
     color: var(--bg-soft-offwhite);
     transform: rotate(45deg);
     box-shadow: 5px 2px 10px 10px var(--shadow);
+    animation: slideIn 2s ease-out backwards;
 }
