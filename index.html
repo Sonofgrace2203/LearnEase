@@ -12,7 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="learnEase.js" defer></script>
-    <script src="learnEaseAI.js"></script>
 </head>
 
 <body>
@@ -31,9 +30,9 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="learnEase.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AI.html">Use AI</a></li>
+                    <li><a href="REVIEW.html">Review</a></li>
+                    <li><a href="contact.html">Support</a></li>
                 </ul>
 
                 <button class="header-btn">
@@ -172,51 +171,86 @@
                 <div class="hero-input-section">
                     <div class="input-section">
                         <div class="section-input">
-                            <input type="text" placeholder="enter a topic or paste your notes" class="input-topic"
-                                id="topicInput">
-
-                            <button id="submitBtn">
+                            <input type="text" placeholder="enter a topic or paste your notes" class="input-topic">
+                            <button>
                                 <i class="mdi mdi-send"></i>
                             </button>
                         </div>
-
                         <div class="file-upload">
-                            <label for="file-upload">Upload your PDF note here</label>
-                            <input type="file" id="pdfInput" class="input-upload">
+                            <label for="file">Upload your PDF note here</label>
+                            <input type="file" id="file-upload" placeholder="upload your notes or PDFs"
+                                class="input-upload">
                         </div>
-
-                        <!-- these are the options buttons-->
-                        <div class="option-buttons">
-                            <button id="explainBtn" class="option-btn">Explain</button>
-                            <button id="summarizeBtn" class="option-btn">Summarize</button>
-                            <button id="quizBtn" class="option-btn">Generate Quiz</button>
+                        <div>
+                            <button>Explain</button>
+                            <button>Summarize</button>
+                            <button>Generate Quiz</button>
                         </div>
-
                     </div>
-                </div>
 
-                <!-- Athis is the AI explain/summary output -->
-                <div class="summary-note" id="explanationContainer">
+                </div>
+                <div class="summary-note">
                     <div class="section-two-head">
                         <i class="mdi mdi-language-ruby-on-rails sect-icon-two2"></i>
                         <div>
-                            <h3>AI Explanation</h3>
+                            <h3 id="h3">AI Explanation</h3>
                         </div>
                     </div>
-                    <div class="explain-note" id="explanationContent"></div>
-                </div>
+                    <div class="explain-note">
+                        <p id="p-note">Photosynthesis is the process by which green plants, algae, and some bacteria
+                            make
+                            their own food using sunlight. They absorb light through a pigment called chlorophyll, which
+                            is
+                            found in their leaves. During photosynthesis, plants take in carbon dioxide (CO₂) from the
+                            air and
+                            water (H₂O) from the soil.
+                        </p>
 
-                <!-- this is the quiz output -->
-                <div class="quiz-question" id="quizContainer">
+                        <p id="p-note">With the help of sunlight, they convert these into glucose, which is a
+                            type of sugar the plant uses for energy and growth.
+                        </p>
+
+                        <p id="p-note">A by-product of this process is oxygen (O₂), which is released into the
+                            atmosphere and
+                            is essential for humans and animals to breathe.
+                            In simple terms:
+                            Sunlight + Water + Carbon dioxide → Glucose + Oxygen
+                        </p>
+                    </div>
+                </div>
+                <div class="quiz-question">
                     <div class="section-two-head">
                         <i class="mdi mdi-lightbulb sect-icon-two2"></i>
                         <div>
-                            <h3>Quiz</h3>
+                            <h3 id="h3">Quiz</h3>
                         </div>
                     </div>
-                    <div class="explain-note" id="quizContent"></div>
-                </div>
+                    <div class="explain-note">
+                        <!-- this is 0the0 quiz question text -->
+                        <p id="p-note">1. Which of the following is a plant pigment involved in photosynthesis?
+                        </p>
 
+                        <!-- this is the options container -->
+                        <div>
+                            <div class="quiz-option">
+                                <div class="radio"><input name="radio" type="radio"></div>
+                                <p id="p-note">Chlorophyll</p>
+                            </div>
+                            <div class="quiz-option">
+                                <div class="radio"><input name="radio" type="radio"></div>
+                                <p id="p-option">Sunlight</p>
+                            </div>
+                            <div class="quiz-option">
+                                <div class="radio"><input name="radio" type="radio"></div>
+                                <p id="p-note">Oxygen</p>
+                            </div>
+                            <div class="quiz-option">
+                                <div class="radio"><input name="radio" type="radio"></div>
+                                <p id="p-note">Carbovdioxide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -300,26 +334,64 @@
                 <div class="review-container">
                     <div class="reviewers">
                         <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">"I absolutely love this platform! The interface is smooth, and I was able to 
-                            find exactly what I needed in no time. Highly recommended for anyone looking to enhance their 
-                            learning experience!"
+                        <p id="reviewer-review">“LearnEase has made studying so much easier for me.
+                            The explanations are clear and the interface is very friendly. I love
+                            the experience so far!”
+                    </div>
+                    <div class="reviewers">
+                        <h3 id="reviewer-name">Adeleke Tolulope</h3>
+                        <p id="reviewer-review">“I tried the summarizer feature, and it really helped
+                            me prepare for my exams. I can’t wait to see more features added.”
                         </p>
                     </div>
                     <div class="reviewers">
-                        <h3 id="reviewer-name">Aderemi Tolulope</h3>
-                        <p id="reviewer-review">"The content is really useful and well-organized. A few minor improvements 
-                            could make navigation easier, but overall it’s a fantastic resource for students."
+                        <h3 id="reviewer-name">James Chioma</h3>
+                        <p id="reviewer-review">“Great UI design! Everything looks clean and organized.
+                            Even though some features are still in progress, I already see the potential.”
                         </p>
                     </div>
                     <div class="reviewers">
-                        <h3 id="reviewer-name">Clement Justice</h3>
-                        <p id="reviewer-review">"A game-changer for my study routine! The explanations are clear, and the 
-                            platform is very intuitive. I can’t imagine going back to old methods."
+                        <h3 id="reviewer-name">Michael Thompson</h3>
+                        <p id="reviewer-review">“Really impressive project for a hackathon. The flow is smooth,
+                            and the idea behind the platform is solid. Keep building!”
+                        </p>
+                    </div>
+                    <div class="reviewers">
+                        <h3 id="reviewer-name">Chisom Okafor</h3>
+                        <p id="reviewer-review">“The note extraction section is super helpful. I love how simple
+                            it is to navigate. Looking forward to the full release!”
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="hero-head-main">
+                <h2 class="hero-head">LearnEase</h2>
+                <div class="footer-nav">
+                    <nav id="footer-nav">
+                        <ul class="nav-links">
+                            <li><a href="learnEase.html">Home</a></li>
+                            <li><a href="AI.html">Use AI</a></li>
+                            <li><a href="REVIEW.html">Review</a></li>
+                            <li><a href="contact.html">Support</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="email">
+                        <i class="mdi mdi-email-outline"></i>
+                        <em>support@LearnEase.ai</em>
+                    </div>
+
+                    <div class="email">
+                        <i class="mdi mdi-location-enter"></i>
+                        <em>Lagos, Nigeria</em>
+                    </div>
+                </div>
+            </div>
+            <h4>Copyright &copy; 2025 LearnEase. All rights reserved.</h4>
+        </footer>
 
         <div class="page-move">
             <a href="#Home">
@@ -340,74 +412,47 @@
                 </div>
             </a>
         </div>
+
+        <div class="section-mobile-menu">
+            <div class="mobile-nav">
+                <div class="mobile-cancel">
+                    <i class="mdi mdi-plus"></i>
+                </div>
+                <!-- This is the navigation bar -->
+                <div class="mobile-navbar">
+                    <!-- This is the logo area -->
+                    <div class="header-mobile-logo">
+                        <a href="learnEase.html">
+                            <h1 id="mobile-h1">LearnEase.AI</h1>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="learnEase.html" id="mobile-link">Home</a>
+                        <a href="AI.html" id="mobile-link">Use Ai</a>
+                        <a href="review.html" id="mobile-link">Review</a>
+                        <a href="contact.html" id="mobile-link">Support</a>
+                    </div>
+
+                    <!-- This is the navigation menu -->
+                    <nav>
+                        <ul class="">
+                            <li><a href="learnEase.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                        <button class="header-btn">
+                            <a href="learnmore.html">Learn more</a>
+                        </button>
+                    </nav>
+
+                    <!-- This is the menu for the mobile view -->
+                </div>
+            </div>
+        </div>
     </main>
-
-    <footer>
-        <div class="hero-head-main">
-            <h2 class="hero-head">LearnEase</h2>
-            <div class="footer-nav">
-                <nav id="footer-nav">
-                    <ul class="nav-links">
-                        <li><a href="learnEase.html">Home</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="email">
-                    <i class="mdi mdi-email-outline"></i>
-                    <em>support@LearnEase.ai</em>
-                </div>
-
-                <div class="email">
-                    <i class="mdi mdi-location-enter"></i>
-                    <em>Lagos, Nigeria</em>
-                </div>
-            </div>
-        </div>
-        <h4>Copyright &copy; 2025 LearnEase. All rights reserved.</h4>
-    </footer>
-
-    <div class="section-mobile-menu">
-        <div class="mobile-nav">
-            <div class="mobile-cancel">
-                <i class="mdi mdi-plus"></i>
-            </div>
-            <!-- This is the navigation bar -->
-            <div class="mobile-navbar">
-                <!-- This is the logo area -->
-                <div class="header-mobile-logo">
-                    <a href="learnEase.html">
-                        <h1 id="mobile-h1">LearnEase.AI</h1>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="home.html" id="mobile-link">Home</a>
-                    <a href="home.html" id="mobile-link">Courses</a>
-                    <a href="home.html" id="mobile-link">About</a>
-                    <a href="home.html" id="mobile-link">Contact</a>
-                </div>
-
-                <!-- This is the navigation menu -->
-                <nav>
-                    <ul class="">
-                        <li><a href="learnEase.html">Home</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-
-                    <button class="header-btn">
-                        <a href="learnmore.html">Learn more</a>
-                    </button>
-                </nav>
-
-                <!-- This is the menu for the mobile view -->
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
