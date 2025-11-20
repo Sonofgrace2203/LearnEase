@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="learnEase.js" defer></script>
+    <script src="learnEaseAI.js"></script>
 </head>
 
 <body>
@@ -171,76 +172,51 @@
                 <div class="hero-input-section">
                     <div class="input-section">
                         <div class="section-input">
-                            <input type="text" placeholder="enter a topic or paste your notes" class="input-topic">
-                            <button>
+                            <input type="text" placeholder="enter a topic or paste your notes" class="input-topic"
+                                id="topicInput">
+
+                            <button id="submitBtn">
                                 <i class="mdi mdi-send"></i>
                             </button>
                         </div>
-                        <div class="file-upload">
-                            <label for="file">Upload your PDF note here</label>
-                            <input type="file" id="file-upload" placeholder="upload your notes or PDFs"
-                                class="input-upload">
-                        </div>
-                        <div>
-                            <button>Explain</button>
-                            <button>Summarize</button>
-                            <button>Generate Quiz</button>
-                        </div>
-                    </div>
 
+                        <div class="file-upload">
+                            <label for="file-upload">Upload your PDF note here</label>
+                            <input type="file" id="pdfInput" class="input-upload">
+                        </div>
+
+                        <!-- these are the options buttons-->
+                        <div class="option-buttons">
+                            <button id="explainBtn" class="option-btn">Explain</button>
+                            <button id="summarizeBtn" class="option-btn">Summarize</button>
+                            <button id="quizBtn" class="option-btn">Generate Quiz</button>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="summary-note">
+
+                <!-- Athis is the AI explain/summary output -->
+                <div class="summary-note" id="explanationContainer">
                     <div class="section-two-head">
                         <i class="mdi mdi-language-ruby-on-rails sect-icon-two2"></i>
                         <div>
-                            <h3 id="h3">AI Explanation</h3>
+                            <h3>AI Explanation</h3>
                         </div>
                     </div>
-                    <div class="explain-note">
-                        <p id="p-note">Photosynthesis is how plants make their food and oxygen. Thay use sunlight,
-                            water, and carbon dioxide to create glucose,
-                            which they use for energy, and oxygen, which is released into the air.
-                        </p>
-
-                        <p id="p-note">Photosynthesis is how plants make their food and oxygen. Thay use sunlight,
-                            water, and carbon dioxide to create glucose,
-                            which they use for energy, and oxygen, which is released into the air.
-                        </p>
-                    </div>
+                    <div class="explain-note" id="explanationContent"></div>
                 </div>
-                <div class="quiz-question">
+
+                <!-- this is the quiz output -->
+                <div class="quiz-question" id="quizContainer">
                     <div class="section-two-head">
                         <i class="mdi mdi-lightbulb sect-icon-two2"></i>
                         <div>
-                            <h3 id="h3">Quiz</h3>
+                            <h3>Quiz</h3>
                         </div>
                     </div>
-                    <div class="explain-note">
-                        <!-- this is 0the0 quiz question text -->
-                        <p id="p-note">1. Which of the following is a plant pigment involved in photosynthesis?
-                        </p>
-
-                        <!-- this is the options container -->
-                        <div>
-                            <div class="quiz-option">
-                                <div class="radio"><input type="radio"></div>
-                                <p id="p-note">Chlorophyll</p>
-                            </div>
-                            <div class="quiz-option">
-                                <div class="radio"><input type="radio"></div>
-                                <p id="p-option">Chlorophyll</p>
-                            </div>
-                            <div class="quiz-option">
-                                <div class="radio"><input type="radio"></div>
-                                <p id="p-note">Chlorophyll</p>
-                            </div>
-                            <div class="quiz-option">
-                                <div class="radio"><input type="radio"></div>
-                                <p id="p-note">Chlorophyll</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="explain-note" id="quizContent"></div>
                 </div>
+
             </div>
         </section>
 
@@ -324,51 +300,21 @@
                 <div class="review-container">
                     <div class="reviewers">
                         <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
+                        <p id="reviewer-review">"I absolutely love this platform! The interface is smooth, and I was able to 
+                            find exactly what I needed in no time. Highly recommended for anyone looking to enhance their 
+                            learning experience!"
                         </p>
                     </div>
                     <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
+                        <h3 id="reviewer-name">Aderemi Tolulope</h3>
+                        <p id="reviewer-review">"The content is really useful and well-organized. A few minor improvements 
+                            could make navigation easier, but overall it’s a fantastic resource for students."
                         </p>
                     </div>
                     <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
-                        </p>
-                    </div>
-                    <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
-                        </p>
-                    </div>
-                    <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
-                        </p>
-                    </div>
-                    <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
-                        </p>
-                    </div>
-                    <div class="reviewers">
-                        <h3 id="reviewer-name">Afolabi Eunice</h3>
-                        <p id="reviewer-review">LearnEase has transformed my learning pace and make me high contendant
-                            for my studying time. I'm so glad i come across this platform.
-                            It is truly a great tool for students looking to enhance their learning experience.
+                        <h3 id="reviewer-name">Clement Justice</h3>
+                        <p id="reviewer-review">"A game-changer for my study routine! The explanations are clear, and the 
+                            platform is very intuitive. I can’t imagine going back to old methods."
                         </p>
                     </div>
                 </div>

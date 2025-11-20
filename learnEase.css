@@ -569,6 +569,7 @@ input {
     padding: 3rem;
     border-radius: 2rem;
     height: 60rem;
+    display: none;
 }
 
 #h3 {
@@ -589,6 +590,7 @@ input {
     background-color: var(--bg-soft-offwhite);
     padding: 3rem;
     border-radius: 2rem;
+    display: none;
 }
 
 /* .radio {
@@ -714,7 +716,7 @@ input {
 }
 
 #reviewer-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: inline;
     color: var(--accent-purple);
 }
@@ -723,6 +725,7 @@ input {
     margin: -4rem;
     display: inline-block;
     font-style: italic;
+    font-size: 2rem;
 }
 
 
