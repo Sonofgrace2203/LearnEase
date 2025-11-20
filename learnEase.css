@@ -569,7 +569,7 @@ input {
     padding: 3rem;
     border-radius: 2rem;
     height: 60rem;
-    display: none;
+    /* display: none; */
 }
 
 #h3 {
@@ -590,7 +590,7 @@ input {
     background-color: var(--bg-soft-offwhite);
     padding: 3rem;
     border-radius: 2rem;
-    display: none;
+    /* display: none; */
 }
 
 /* .radio {
