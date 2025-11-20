@@ -117,7 +117,7 @@ form.addEventListener("submit", async (e) => {
     const prompt = promptInput.value;
 
     try {
-        const res = await fetch("http://localhost:3000/api/ask", {
+        const res = await fetch("https://learnease-backend.onrender.com/api/ai"), {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt })
