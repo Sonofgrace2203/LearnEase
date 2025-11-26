@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 42%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+:root {
+    --primary-teal: hsl(173, 100%, 27%);
+    --primary-teal-bg: hsl(173, 100%, 27%, 0.3);
+    --accent-purple: hsl(262, 47%, 55%);
+    --accent-purple-bg: hsl(262, 47%, 55%, 0.3);
+    --bg-soft-offwhite: #f9fafb;
+    --text-dark: #2e2e2e;
+    --shadow: hsl(262, 47%, 55%, 0.3);
+}
+
+/* This is the CSS code for the header section of the webpage */
+header {
+    background: var(--accent-purple);
+    color: var(--bg-soft-offwhite);
+    padding: 1rem 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: -5px 5px 2px 5px var(--shadow);
+    z-index: 5;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    color: var(--bg-soft-offwhite);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.2rem;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .header-menu {
+        color: var(--bg-soft-offwhite);
+        font-size: 4em;
+        display: block;
+    }
+}
+
+#nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    color: var(--bg-soft-offwhite);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--bg-soft-offwhite);
+    font-weight: bold;
+}
+
+#li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--bg-soft-offwhite);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#li a:hover {
+    padding: 1rem 2rem;
+    background-color: var(--bg-soft-offwhite);
+    color: var(--accent-purple);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-btn {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    background: var(--primary-teal);
+    color: var(--bg-soft-offwhite);
+    border: none;
+    border-radius: 1rem;
+    border: 2px solid var(--bg-soft-offwhite);
+}
+
+.header-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a {
+    color: var(--bg-soft-offwhite);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.img-container {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+/* This is where the header CSS ends */
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--accent-purple);
+    color: var(--bg-soft-offwhite);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+}
+
+.footer-nav {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    #footer-nav {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-mobile-menu {
+    display: none;
+    z-index: 3;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-soft-offwhite);
+    height: 100vh;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    box-shadow: 2px 2px 5px var(--shadow);
+    animation: slideUp 1s ease-in-out backwards;
+}
+
+.learnease-mobile-logo {
+    color: var(--accent-purple);
+}
+
+#mobile-h1 {
+    color: var(--accent-purple);
+    font-size: 2rem;
+    background-color: var(--accent-purple-bg);
+    padding: 1rem 6rem;
+}
+
+#mobile-link {
+    color: var(--accent-purple);
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    display: block;
+    padding: 4rem 4rem;
+    border-bottom: 2px solid var(--accent-purple);
+    font-weight: bold;
+}
+
+#mobile-link:hover {
+    color: var(--bg-soft-offwhite);
+    background-color: var(--accent-purple);
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    display: block;
+    padding: 4rem 4rem;
+    border-bottom: 2px solid var(--accent-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    animation: slideUp 1s ease-in-out backwards;
+}
+
+.mobile-cancel {
+    padding: 2rem;
+    background-color: var(--accent-purple);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: var(--bg-soft-offwhite);
+    transform: rotate(45deg);
+    box-shadow: 5px 2px 10px 10px var(--shadow);
+    animation: slideIn 2s ease-out backwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    padding: 12rem 3rem 3rem;
+}
+
+section {
+    padding: 2rem 0rem;
+    margin-top: -2rem;
+}
+
+.p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.h1 {
+    color: var(--accent-purple);
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    background-color: var(--primary-teal-bg);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    line-height: 3rem;
+}
+
+strong {
+    color: var(--primary-teal);
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-teal);
+}
+
+ul {
+    margin-top: -2rem;
+    padding: 5rem;
+    color: var(--bg-soft-offwhite);
+    list-style-type: none;
+}
+
+li {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+li:hover {
+    padding: 1rem 2rem;
+    background-color: var(--accent-purple-bg);
+    color: var(--accent-purple);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+table {
+ font-size: 2rem;
+ padding: 2rem;
+}
+
+tr {
+
+}
+
+th {
+    background-color: var(--primary-teal-bg);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+td {
+    padding: 1rem 4rem;
+    background-color: var(--shadow);
+}
