@@ -402,7 +402,7 @@ strong {
     color: var(--primary-teal);
     font-weight: bold;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--primary-teal);
+    /* border-bottom: 2px solid var(--primary-teal); */
 }
 
 ul {
