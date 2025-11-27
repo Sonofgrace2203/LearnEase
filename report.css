@@ -104,6 +104,15 @@ header {
     gap: 5rem;
 }
 
+#nav-links {
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+button:hover {
+    background-color: var(--accent-purple);
+}
+
 .header-menu {
     display: none;
 }
@@ -135,23 +144,6 @@ h1 {
     font-size: 3rem;
     color: var(--bg-soft-offwhite);
     font-weight: bold;
-}
-
-#li a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--bg-soft-offwhite);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-#li a:hover {
-    padding: 1rem 2rem;
-    background-color: var(--bg-soft-offwhite);
-    color: var(--accent-purple);
-    font-weight: bold;
-    font-size: 2rem;
-    transition: all 0.3s ease-in-out;
 }
 
 .header-btn {
@@ -191,6 +183,7 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 /* This is where the header CSS ends */
 
 
@@ -225,6 +218,7 @@ footer {
 .email {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -234,13 +228,59 @@ footer {
     }
 }
 
+em {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.hero-head-main {
+    margin-top: -rem;
+    animation: slideIn 1s ease-out forwards;
+}
 
 
+.hero-head {
+    font-size: 500%;
+    opacity: 0.5;
+}
+
+@media (min-width: 1024px) and (max-width: 1200) {
+    .hero-head {
+        font-size: 300%;
+    }
+}
+
+h6 {
+    font-size: 50%;
+    text-align: center;
+}
 
 
+#b-report {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
 
+li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--bg-soft-offwhite);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
-
+li a:hover {
+    padding: 1rem 2rem;
+    background-color: var(--bg-soft-offwhite);
+    color: var(--accent-purple);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
@@ -296,7 +336,6 @@ footer {
     border-bottom: 2px solid var(--accent-purple);
     font-weight: bold;
     font-size: 3rem;
-    animation: slideUp 1s ease-in-out backwards;
 }
 
 .mobile-cancel {
@@ -370,7 +409,7 @@ ul {
     margin-top: -2rem;
     padding: 5rem;
     color: var(--bg-soft-offwhite);
-    list-style-type: none;
+    list-style-type: decimal;
 }
 
 li {
@@ -391,13 +430,11 @@ li:hover {
 }
 
 table {
- font-size: 2rem;
- padding: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
 }
 
-tr {
-
-}
+tr {}
 
 th {
     background-color: var(--primary-teal-bg);
@@ -408,4 +445,9 @@ th {
 td {
     padding: 1rem 4rem;
     background-color: var(--shadow);
+}
+
+ol {
+    padding: 0rem 6rem;
+    list-style-type: none;
 }

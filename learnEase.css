@@ -917,7 +917,6 @@ footer {
     border-bottom: 2px solid var(--accent-purple);
     font-weight: bold;
     font-size: 3rem;
-    animation: slideUp 1s ease-in-out backwards;
 }
 
 .mobile-cancel {
