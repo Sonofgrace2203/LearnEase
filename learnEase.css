@@ -428,8 +428,8 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8rem 5rem 0rem;
-    gap: rem;
+    padding: 6rem;
+    gap: 5rem;
     flex-wrap: wrap;
     background-color: var(--bg-soft-offwhite);
 }
@@ -442,6 +442,10 @@ button:hover {
     gap: 5rem;
     flex-wrap: wrap;
     background-color: var(--bg-soft-offwhite);
+}
+
+.hero-two {
+    padding: 2rem;
 }
 
 .section-two-hero {
