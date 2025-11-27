@@ -432,6 +432,11 @@ li:hover {
 table {
     font-size: 2rem;
     padding: 2rem;
+    width: fit-content;
+}
+
+.table {
+    width: 100%;
 }
 
 tr {}

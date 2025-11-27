@@ -80,3 +80,19 @@ function quHideRedirect() {
     quredirect.style.display = 'none';
 }
 quredirectCancel.addEventListener('click', quHideRedirect);
+
+
+
+const iframe = document.getElementById('iframe-con')
+const iframeBtn = document.getElementById('iframeBtn')
+const iframeCancel = document.getElementById('iframe-cancel')
+
+function showIframe() {
+    iframe.style.display = 'block';
+}
+iframeBtn.addEventListener('click', showIframe);
+
+function hideIframe() {
+    iframe.style.display = 'none';
+}
+iframeCancel.addEventListener('click', hideIframe);
