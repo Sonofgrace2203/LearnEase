@@ -83,6 +83,23 @@ quredirectCancel.addEventListener('click', quHideRedirect);
 
 
 
+const pdredirect = document.getElementById('pd-redirect-div')
+const pdredirectFetch = document.getElementById('pdfBtn')
+const pdredirectCancel = document.getElementById('pd-redirect-cancel')
+
+function pdShowRedirect() {
+    pdredirect.style.display = 'block';
+}
+
+pdredirectFetch.addEventListener('click', pdShowRedirect);
+
+function pdHideRedirect() {
+    pdredirect.style.display = 'none';
+}
+pdredirectCancel.addEventListener('click', pdHideRedirect);
+
+
+
 const iframe = document.getElementById('iframe-con')
 const iframeBtn = document.getElementById('iframeBtn')
 const iframeCancel = document.getElementById('iframe-cancel')
