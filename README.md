@@ -21,7 +21,7 @@ The repository contains:
 
 
 # Demo Video (3 Minutes)
-https://youtu.be/k9utAmLm98E
+https://youtu.be/yetNVUHqGLY
 
 # Hackathon Track: 
 Education & Digital Inclusion
