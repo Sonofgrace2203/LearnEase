@@ -167,6 +167,17 @@ a {
     text-decoration: none;
 }
 
+#a-project {
+    color: var(--accent-purple);
+    text-decoration: none;
+}
+
+#a-project:hover {
+    color: var(--accent-purple);
+    text-decoration: none;
+    background: none;
+}
+
 img {
     width: 100%;
 }
